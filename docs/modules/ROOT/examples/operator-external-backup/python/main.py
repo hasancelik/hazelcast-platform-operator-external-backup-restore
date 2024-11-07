@@ -12,8 +12,8 @@ elif not (sys.argv[1] == "fill" or sys.argv[1] == "size"):
     print("Wrong argument, you should pass: fill or size")
 else:
     client = hazelcast.HazelcastClient(
-        cluster_members=["<EXTERNAL-IP>"],
-        use_public_ip=True,
+        cluster_members=["34.28.159.226"],
+        smart_routing=False,
     )
     print("Successful connection!", flush=True)
     m = client.get_map("persistent-map").blocking()
