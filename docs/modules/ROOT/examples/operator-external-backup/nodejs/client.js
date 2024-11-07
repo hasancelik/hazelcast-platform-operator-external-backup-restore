@@ -5,7 +5,7 @@ const { Client } = require('hazelcast-client');
 const clientConfig = {
     network: {
         clusterMembers: [
-            '34.28.159.226'
+            '<EXTERNAL-IP>'
         ],
         smartRouting: false
     }
